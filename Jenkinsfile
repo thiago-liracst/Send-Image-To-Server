@@ -10,8 +10,6 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                cd server
-                echo 'npm test'
             }
         }
         stage('Deploy') {
