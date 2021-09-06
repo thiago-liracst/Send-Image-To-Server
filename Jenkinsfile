@@ -10,12 +10,13 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
+                sh "npm install"
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh "git checkout master"
+                sh "git checkout develop"
             }
         }
     }
