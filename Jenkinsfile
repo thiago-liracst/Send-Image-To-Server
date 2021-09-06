@@ -10,7 +10,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                sh "cd server & npm install"
+                sh "cd server & npm test"
             }
         }
         stage('Deploy') {
