@@ -11,6 +11,9 @@ pipeline {
             steps {
                 echo 'Testing..'
             }
+            steps {
+                cd server
+            }
         }
         stage('Deploy') {
             steps {
