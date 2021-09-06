@@ -8,8 +8,12 @@ pipeline {
             }
         }
         stage('Test') {
+            agent {
+                docker {image 'node'}
+            }
             steps {
                 echo 'Testing..'
+                sh 'npm -v'
             }
         }
         stage('Deploy') {
