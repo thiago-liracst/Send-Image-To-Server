@@ -14,6 +14,9 @@ pipeline {
             }
         }
         stage('Deploy') {
+            agente {
+                docker { image 'node'}
+            }
             steps {
                 echo 'Deploying....'
                 sh "git checkout develop"
