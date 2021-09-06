@@ -11,7 +11,7 @@ pipeline {
             steps {
                 echo 'Testing..'
                 cd server
-                exho 'npm test'
+                echo 'npm test'
             }
         }
         stage('Deploy') {
