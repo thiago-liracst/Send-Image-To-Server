@@ -15,7 +15,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh "git checkou master"
+                sh "git checkout master"
             }
         }
     }
