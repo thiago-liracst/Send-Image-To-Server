@@ -9,8 +9,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
-                cd server
+                echo 'Testing..',
+                cd server,
                 npm test
             }
         }
