@@ -10,12 +10,12 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-                node -v
             }
         }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+                git checkou master
             }
         }
     }
