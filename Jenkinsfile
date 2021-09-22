@@ -16,6 +16,11 @@ pipeline {
                 sh 'npm -v'
             }
         }
+        stage('Homolação') {
+            steps{
+                echo 'Promovendo para homolagação'
+            }
+        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
